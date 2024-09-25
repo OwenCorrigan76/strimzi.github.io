@@ -18,11 +18,12 @@ Kafka clusters.
 ## Metrics Reporter overview
 
 The Strimzi Metrics Reporter is an early-access project that implements a metrics reporter for Prometheus, as proposed
-in Strimzi Proposal #64. It offers a way to export Apache Kafka metrics directly to Prometheus without relying solely on
+in this [Strimzi Proposal](https://github.com/strimzi/proposals/blob/main/064-prometheus-metrics-reporter.md). It offers a way to export Apache Kafka metrics directly to Prometheus without relying solely on
 JMX (Java Management Extensions).
 
 This reporter is useful for anyone using Kafka who wants a seamless integration with Prometheus, a powerful monitoring
 and alerting toolkit widely used in cloud-native environments.
+The reporters will also export JVM metrics similar to the ones exported by jmx_exporter. These are provided by the [JVM instrumentation package](https://github.com/prometheus/client_java/tree/main/prometheus-metrics-instrumentation-jvm) from the Prometheus Java client.
 
 ## Key Features
 * Direct Prometheus Integration: Exposes Kafka metrics directly to Prometheus through an HTTP endpoint.
