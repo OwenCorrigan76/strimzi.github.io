@@ -40,6 +40,8 @@ The KafkaPrometheusMetricsReporter class is responsible for exposing Kafka's met
 
 ## Installing Strimzi Prometheus Metrics Reporter
 
+*This will change when we have Strimzi integration..... 
+
 Since the Strimzi Prometheus Metrics Reporter is currently in early access and does not have a formal release yet, you
 must build the reporter from the source. Here’s how to install it:
 
